@@ -5,12 +5,44 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- reset css -->
     <link rel="stylesheet" href="./assets/css/reset.css" />
+    <!-- embed font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&family=Sen:wght@400..800&display=swap"
+      rel="stylesheet"
+    />
     <!-- style -->
     <link rel="stylesheet" href="./assets/css/style.css" />
     <title>Thiết kế Web từ Figma</title>
   </head>
-  <body>
-    <h1>Figma to HTML</h1>
-    <h2>Demo</h2>
+  <body style="height: 10000px">
+    <!-- Header -->
+    <header class="header fixed">
+      <div class="main-content">
+        <div class="body-header">
+          <!-- Logo -->
+          <img
+            src="./assets/img/logo-elambo-icon.png"
+            alt="Elambo"
+            class="logo"
+            style="width: 50px; height: 50px"
+          />
+          <!-- Nav -->
+          <nav class="nav">
+            <ul>
+              <li class="active"><a href="#!">Home</a></li>
+              <li><a href="#!">Courses</a></li>
+              <li><a href="#!">Pricing</a></li>
+              <li><a href="#!">Reviews</a></li>
+            </ul>
+          </nav>
+          <!-- Btn action -->
+          <div class="action">
+            <a href="#!" class="btn btn-sign-up">Sign Up</a>
+          </div>
+        </div>
+      </div>
+    </header>
   </body>
 </html>
