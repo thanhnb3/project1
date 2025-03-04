@@ -47,6 +47,18 @@ a {
   line-height: 1.27;
   letter-spacing: -0.76px;
 }
+.line-clamp {
+  display: -webkit-box;
+  -webkit-line-clamp: var(--line-clamp, 1);
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+.line-clamp.line-2 {
+  --line-clamp: 2;
+}
+.break-all {
+  word-break: break-all;
+}
 /* Header */
 .header {
   background: #e0c783;
@@ -281,6 +293,7 @@ a {
   border-radius: 12px;
   border: 1px solid #e2dfda;
   background: #fff;
+  flex: 1;
 }
 .popular .course-item:hover {
   border-radius: 12px;
@@ -340,4 +353,67 @@ a {
 }
 .popular .course-item .btn-book:hover {
   background: var(--primary-color);
+}
+/* ####################Feedback################ */
+.feedback {
+  margin-top: 135px;
+  padding: 96px 0;
+  background-color: #2e2100;
+}
+.feedback-list {
+  display: flex;
+  overflow: hidden;
+}
+
+.feedback-item {
+  display: flex;
+  flex-shrink: 0;
+  width: 100%;
+}
+.feedback .avatar {
+  width: 72px;
+  height: 72px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+.feedback .member-name {
+  margin-top: 18px;
+  color: #f7f7f7;
+  font-family: var(--font-heading);
+  font-size: 2.4rem;
+  font-weight: 700;
+  line-height: 1.42;
+}
+.feedback-item .info .desc {
+  margin-top: 4px;
+  color: #bfbcb2;
+  font-size: 1.4rem;
+  font-weight: 400;
+  line-height: 1.86;
+}
+.feedback-item .dots {
+  display: flex;
+  margin-top: 28px;
+  gap: 6px;
+}
+.feedback-item .dot {
+  height: 6px;
+  width: 6px;
+  border-radius: 50%;
+  background: #634700;
+  cursor: pointer;
+}
+.feedback-item .dot.active {
+  background: var(--primary-color);
+  cursor: default;
+}
+.feedback-item .content {
+  width: 66%;
+  margin-left: auto;
+}
+.feedback-item blockquote {
+  color: #fff;
+  font-size: 2.6rem;
+  font-style: italic;
+  line-height: 1.54;
 }
